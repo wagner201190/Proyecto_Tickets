@@ -1,6 +1,4 @@
-﻿body{background: linear-gradient(to bottom, #0099ff 0%, #fff 100%);
-
-}
+﻿
 * {
     margin: 0px;
     padding: 0px;
@@ -8,7 +6,7 @@
 }
 
 .login {
-   
+  
     height: 80vh;
     width: 100%;
     justify-content: center;
@@ -31,13 +29,14 @@ p a {
 .account-login h1 {
     font-size: 25px;
     text-align: left;
-    color: #fff;
+    color: #009cff;
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 5px;
 }
 
 .login-form input {
+   
     width: 100%;
     position: relative;
     border-bottom: 1px solid #a39e9e;
@@ -152,4 +151,4 @@ p {
     }
 }
 
-</style >
+
