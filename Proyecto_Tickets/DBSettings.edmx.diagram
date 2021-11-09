@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2662c133351548f7bffbda52dad3055a" Name="Diagram1">
+        <EntityTypeShape EntityType="db_a7c197_ticketsModel.CANAL_ORIGEN" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a7c197_ticketsModel.CATEGORIA" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a7c197_ticketsModel.DEPARTAMENTO" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a7c197_ticketsModel.ESTADO" Width="1.5" PointX="3" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a7c197_ticketsModel.INCIDENTE" Width="1.5" PointX="5.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a7c197_ticketsModel.PRIORIDAD" Width="1.5" PointX="3" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a7c197_ticketsModel.ROL" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a7c197_ticketsModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a7c197_ticketsModel.USUARIO" Width="1.5" PointX="3" PointY="2.875" IsExpanded="true" />
+        <AssociationConnector Association="db_a7c197_ticketsModel.FK__INCIDENTE__ID_OR__32E0915F" ManuallyRouted="false" />
+        <AssociationConnector Association="db_a7c197_ticketsModel.FK__INCIDENTE__ID_CA__2D27B809" ManuallyRouted="false" />
+        <AssociationConnector Association="db_a7c197_ticketsModel.FK__USUARIO__ID_DEPA__2A4B4B5E" ManuallyRouted="false" />
+        <AssociationConnector Association="db_a7c197_ticketsModel.FK__INCIDENTE__ID_ES__2F10007B" ManuallyRouted="false" />
+        <AssociationConnector Association="db_a7c197_ticketsModel.FK__INCIDENTE__ID_PR__2E1BDC42" ManuallyRouted="false" />
+        <AssociationConnector Association="db_a7c197_ticketsModel.FK__INCIDENTE__ID_US__2C3393D0" ManuallyRouted="false" />
+        <AssociationConnector Association="db_a7c197_ticketsModel.FK__USUARIO__ID_ROL__29572725" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
