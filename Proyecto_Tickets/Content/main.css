@@ -90,6 +90,7 @@ body {
         padding: 15px 20px 15px 20px;
         font-size: 0.9em;
         line-height: 1.9em;
+      
     }
 
     .grid .full {
@@ -164,6 +165,13 @@ body {
         border-bottom-style: solid !important;
     }
 
+.body-tiket {
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
 
 /* SUPPORT TICKET */
 .support ul {

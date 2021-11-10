@@ -93,126 +93,124 @@
     }
 
 </table>
+<div class="body-tiket">
+    <div class="grid-body">
+        <h2>Tikets</h2>
+        <hr />
 
-<div class="grid-body">
-    <h2>Tikets</h2>
-    <hr />
-
-    <div class="btn-group">
-
-
-    </div>
-    <button type="button"
-            class="btn btn-success "
-            data-toggle="modal"
-            data-target="#newTiket">
-        Nuevo tiket
-    </button>
-    <div class="modal fade"
-         id="newTiket"
-         tabindex="-1"
-         role="dialog"
-         aria-labelledby="newTiket"
-         aria-hidden="true">
-        <div class="modal-wrapper">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header bg-blue">
-                        <button type="button"
-                                class="close"
-                                data-dismiss="modal"
-                                aria-hidden="true">
-                            ×
-                        </button>
-                        <h4 class="modal-title">
-                            <i class="fa fa-pencil"></i> Crear Nuevo Tiket
-                        </h4>
-                    </div>
-                    <form action="#" method="post">
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <input name="subject"
-                                       type="text"
-                                       class="form-control"
-                                       placeholder="Subject" />
-                            </div>
-                            <div class="form-group">
-                                <input name="department"
-                                       type="text"
-                                       class="form-control"
-                                       placeholder="Department" />
-                            </div>
-                            <div class="form-group">
-                                <textarea name="message"
-                                          class="form-control"
-                                          placeholder="Please detail your issue or question"
-                                          style="height: 120px"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <input type="file" name="attachment" />
-                            </div>
-                        </div>
-                        <div class="modal-footer">
+        <button type="button"
+                class="btn btn-success "
+                data-toggle="modal"
+                data-target="#newTiket">
+            Nuevo tiket
+        </button>
+        <div class="modal fade"
+             id="newTiket"
+             tabindex="-1"
+             role="dialog"
+             aria-labelledby="newTiket"
+             aria-hidden="true">
+            <div class="modal-wrapper">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-blue">
                             <button type="button"
-                                    class="btn btn-default"
-                                    data-dismiss="modal">
-                                <i class="fa fa-times"></i> Discard
+                                    class="close"
+                                    data-dismiss="modal"
+                                    aria-hidden="true">
+                                ×
                             </button>
-                            <button type="submit" class="btn btn-primary pull-right">
-                                <i class="fa fa-pencil"></i> Create
-                            </button>
+                            <h4 class="modal-title">
+                                <i class="fa fa-pencil"></i> Crear Nuevo Tiket
+                            </h4>
                         </div>
-                    </form>
+                        <form action="#" method="post">
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <input name="subject"
+                                           type="text"
+                                           class="form-control"
+                                           placeholder="Subject" />
+                                </div>
+                                <div class="form-group">
+                                    <input name="department"
+                                           type="text"
+                                           class="form-control"
+                                           placeholder="Department" />
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message"
+                                              class="form-control"
+                                              placeholder="Please detail your issue or question"
+                                              style="height: 120px"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input type="file" name="attachment" />
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button"
+                                        class="btn btn-default"
+                                        data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Discard
+                                </button>
+                                <button type="submit" class="btn btn-primary pull-right">
+                                    <i class="fa fa-pencil"></i> Create
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="padding"></div>
-    <div class="row">
-        <div class="col-md-12">
+        <div class="padding"></div>
+        <div class="row">
+            <div class="col-md-12">
 
-            <!--LISTADO-->
+                <!--LISTADO-->
 
-            @foreach (var item in Model)
-            {
-                <ul class="list-group fa-padding">
+                @foreach (var item in Model)
+                {
+                    <ul class="list-group fa-padding">
 
-                    <li class="list-group-item">
-                        <div class="media">
-                            <i class="fa fa-cog pull-left"></i>
-                            <div class="media-body">
-                                Asunto: <strong>@Html.DisplayFor(modelItem => item.NOMBRE)</strong>
-                                <span class="label label-primary">
-                                    @Html.DisplayFor(modelItem => item.PRIORIDAD.NOMBRE_PRIORIDAD)
-                                </span>
-                                <span class="number pull-right">@Html.DisplayFor(modelItem => item.ESTADO.NOMBRE_ESTADO)</span>
-                                <br />
-                                <br />
-                                <p class="info">
-                                    Creado por: <strong> @Html.DisplayFor(modelItem => item.USUARIO.NOMBRE) </strong>
-                                    &nbsp | &nbsp &nbsp Fecha de creacion: <strong>  @Html.DisplayFor(modelItem => item.FECHA_CREACION)</strong>
-                                    &nbsp | &nbsp &nbsp Categoria: <i class="fa fa-comments"></i> <strong>@Html.DisplayFor(modelItem => item.CATEGORIA.NOMBRE_CATEGORIA)</strong>
-                                </p>
+                        <li class="list-group-item">
+                            <div class="media">
+                                <i class="fa fa-cog pull-left"></i>
+                                <div class="media-body">
+                                    Asunto: <strong>@Html.DisplayFor(modelItem => item.NOMBRE)</strong>
+                                    <span class="label label-primary">
+                                        @Html.DisplayFor(modelItem => item.PRIORIDAD.NOMBRE_PRIORIDAD)
+                                    </span>
+                                    <span class="number pull-right">@Html.DisplayFor(modelItem => item.ESTADO.NOMBRE_ESTADO)</span>
+                                    <br />
+                                    <br />
+                                    <p class="info">
+                                        Creado por: <strong> @Html.DisplayFor(modelItem => item.USUARIO.NOMBRE) </strong>
+                                        &nbsp | &nbsp &nbsp Fecha de creacion: <strong>  @Html.DisplayFor(modelItem => item.FECHA_CREACION)</strong>
+                                        &nbsp | &nbsp &nbsp Categoria: <i class="fa fa-comments"></i> <strong>@Html.DisplayFor(modelItem => item.CATEGORIA.NOMBRE_CATEGORIA)</strong>
+                                    </p>
 
-                                <div class="pull-right">
-                                    @Html.ActionLink("Ver", "#", new { id = item.ID_INCIDENTE }, new { @data_toggle = "modal", @data_target = "#issue", @class = " btn btn-info" })
-                                    @Html.ActionLink("Editar", "Edit", new { id = item.ID_INCIDENTE }, new { @data_toggle = "modal", @data_target = "#issue", @class = " btn btn-warning" })
-                                    @Html.ActionLink("Eliminar", "Delete", new { id = item.ID_INCIDENTE }, new { @class = " btn btn-danger" })
+                                    <div class="pull-right">
+                                        @Html.ActionLink("Ver", "#", new { id = item.ID_INCIDENTE }, new { @data_toggle = "modal", @data_target = "#issue", @class = " btn btn-info" })
+                                        @Html.ActionLink("Editar", "Edit", new { id = item.ID_INCIDENTE }, new { @class = " btn btn-warning" })
+                                        @Html.ActionLink("Eliminar", "Delete", new { id = item.ID_INCIDENTE }, new { @class = " btn btn-danger" })
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
+                        </li>
 
-                </ul>
-
-
-            }
-            <!--FIN LISTADO-->
+                    </ul>
 
 
+                }
+                <!--FIN LISTADO-->
 
+
+
+            </div>
         </div>
     </div>
+
 </div>
 
 <div class="modal fade"
