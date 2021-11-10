@@ -5,38 +5,39 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Detalles</h2>
+
 
 <div class="card-all">
 
-    <hr />
-    <div class="card-header">
+    <div class="card-header text-center">
 
-        <h4>INCIDENTE</h4>
+        <h2>Detalle del incidente</h2>
     </div>
 
-    <div class="card-body">
+    <div class="card-body ">
 
+        <!--
+           <div class="row">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label> </label>
+                        <div>
 
-        <div class="row">
-            <div class="col-md-3">
-                <div class="form-group">
-                    <label> </label>
-                    <div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label> </label>
+                        <div>
+
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="form-group">
-                    <label> </label>
-                    <div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
+        -->
 
 
         <div class="row">
@@ -62,7 +63,7 @@
         </div>
 
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <div class="form-group">
                     <label> @Html.DisplayName("Creacion") </label>
                     <div>
@@ -70,7 +71,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <div class="form-group">
                     <label> @Html.DisplayName("Resuelto") </label>
                     <div>
@@ -82,7 +83,7 @@
 
 
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <div class="form-group">
                     <label>@Html.DisplayName("Duracion") </label>
                     <div>
@@ -91,7 +92,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <div class="form-group">
                     <label>  @Html.DisplayName("Motivo de cierre")  </label>
                     <div>
@@ -103,7 +104,7 @@
 
 
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <div class="form-group">
                     <label>@Html.DisplayName("Origen") </label>
                     <div>
@@ -112,7 +113,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <div class="form-group">
                     <label> @Html.DisplayName("Categoria")</label>
                     <div>
@@ -125,7 +126,7 @@
 
 
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <div class="form-group">
                     <label> @Html.DisplayName("Estado")</label>
                     <div>
@@ -134,7 +135,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <div class="form-group">
                     <label>   @Html.DisplayName("Prioridad") </label>
                     <div>
@@ -144,8 +145,8 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-6">
+        <div class="row ">
+            <div class="col-md-10 ">
                 <div class="form-group">
                     <label>@Html.DisplayName("Descripcion") </label>
                     <div>
@@ -154,7 +155,6 @@
                 </div>
             </div>
 
-           
         </div>
 
     </div>
