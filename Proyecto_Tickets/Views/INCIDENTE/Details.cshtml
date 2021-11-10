@@ -17,31 +17,31 @@
     <div class="card-body ">
 
         <!--
-           <div class="row">
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <label> </label>
-                        <div>
+       <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label> </label>
+                    <div>
 
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <label> </label>
-                        <div>
-
-                        </div>
                     </div>
                 </div>
             </div>
 
-        -->
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label> </label>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    -->
 
 
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="form-group">
                     <label>@Html.DisplayName("Asunto") </label>
                     <div class="">
@@ -51,7 +51,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="form-group">
                     <label> @Html.DisplayName("Usuario") </label>
                     <div>
@@ -60,51 +60,7 @@
 
                 </div>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label> @Html.DisplayName("Creacion") </label>
-                    <div>
-                        @Html.DisplayFor(model => model.FECHA_CREACION)
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label> @Html.DisplayName("Resuelto") </label>
-                    <div>
-                        @Html.DisplayFor(model => model.FECHA_ACTUALIZACION)
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label>@Html.DisplayName("Duracion") </label>
-                    <div>
-                        @Html.DisplayFor(model => model.DURACION)
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label>  @Html.DisplayName("Motivo de cierre")  </label>
-                    <div>
-                        @Html.DisplayFor(model => model.MOTIVO_CIERRE)
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="form-group">
                     <label>@Html.DisplayName("Origen") </label>
                     <div>
@@ -113,7 +69,41 @@
                 </div>
             </div>
 
-            <div class="col-md-6">
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label> @Html.DisplayName("Creación") </label>
+                    <div>
+                        @Html.DisplayFor(model => model.FECHA_CREACION)
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label> @Html.DisplayName("Resuelto") </label>
+                    <div>
+                        @Html.DisplayFor(model => model.FECHA_ACTUALIZACION)
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>@Html.DisplayName("Duración") </label>
+                    <div>
+                        @Html.DisplayFor(model => model.DURACION)
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4">
                 <div class="form-group">
                     <label> @Html.DisplayName("Categoria")</label>
                     <div>
@@ -121,12 +111,15 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-
-
-        <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>   @Html.DisplayName("Prioridad") </label>
+                    <div>
+                        @Html.DisplayFor(model => model.PRIORIDAD.NOMBRE_PRIORIDAD)
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
                 <div class="form-group">
                     <label> @Html.DisplayName("Estado")</label>
                     <div>
@@ -135,16 +128,11 @@
                 </div>
             </div>
 
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label>   @Html.DisplayName("Prioridad") </label>
-                    <div>
-                        @Html.DisplayFor(model => model.PRIORIDAD.NOMBRE_PRIORIDAD)
-                    </div>
-                </div>
-            </div>
         </div>
 
+
+
+        <br />
         <div class="row ">
             <div class="col-md-10 ">
                 <div class="form-group">
@@ -157,14 +145,30 @@
 
         </div>
 
+        <div class="row ">
+            <div class="col-md-10 ">
+                <div class="form-group">
+                    <label> @Html.DisplayName("Respuesta") </label>
+                    <div>
+                        @Html.DisplayFor(model => model.MOTIVO_CIERRE)
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br />
+        <div class="pull-right">
+            <button class="btn btn-default "> @Html.ActionLink("Volver a los tickets", "Index")</button>|
+            @Html.ActionLink("Resolver", "Edit", new { id = Model.ID_INCIDENTE }, new { @class = "btn btn-primary" })
+        </div>
+     
     </div>
-   
+
 
 
 </div>
 
 
 <p>
-    @Html.ActionLink("Resolver", "Edit", new { id = Model.ID_INCIDENTE }) |
-    @Html.ActionLink("Volver a los tickets", "Index")
+    
 </p>

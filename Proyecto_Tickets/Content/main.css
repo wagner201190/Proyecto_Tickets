@@ -2,7 +2,7 @@
 
 body {
     margin-top: 20px;
-    background: #fff;
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .padding {
@@ -164,13 +164,13 @@ body {
         border-bottom-style: solid !important;
     }
 
-.body-tiket {
+.body-ticket {
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
     border: 0px solid #000000;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.1);
+    background: #fff;
 }
 /* SUPPORT TICKET */
 .support ul {
@@ -213,9 +213,20 @@ body {
     cursor: pointer;
 }
 
-    .support-content .list-group li:hover {
-        background: #eee;
+.list-group-item {
+    background: rgba(0, 0, 0, 0.1);
+    transition:  0.2s ease-in-out;
+}
+    .list-group-item:hover {
+        background: #666666;
+        color: #fff;
+        animation-delay;
+        transition: 0.2s ease-in-out;
     }
+
+.support-content .list-group li:hover {
+    background: #ddd;
+}
 
 .support-content .fa-padding .fa {
     padding-top: 5px;
@@ -268,27 +279,25 @@ body {
 .card-body{
     flex: 1 1 auto;
     min-height: 1px;
-    padding: 1.25rem;
+    padding: 2.25rem;
 }
 
 .card-all{
-    position: relative;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    
+
     display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
+    align-content:center;
     background-color: #fff;
-    background-clip: border-box;
     border: 0 solid rgba(0,0,0,.125);
     border-radius: 0.25rem;
-    background:rgba(0, 0, 0, 0.1)
+    background:#fff;
+    font-size: larger;
+   
 }
 
 .card-header {
     background: #007be9;
     border-radius: 0.25rem;
+    color: white;
 }
