@@ -4,10 +4,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tikets</title>
+    <title>Tickets</title>
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/main.css")
+
     @Scripts.Render("~/bundles/modernizr")
-    <link rel="stylesheet" type="text/css" href="~/Content/main.css" />
+
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -24,7 +26,8 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
                     <li>@Html.ActionLink("Incidente", "index", "Incidente")</li>
-                    
+
+
                 </ul>
             </div>
         </div>

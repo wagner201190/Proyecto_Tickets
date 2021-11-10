@@ -7,103 +7,164 @@
 
 <h2>Detalles</h2>
 
-<div>
-    <h4>INCIDENTE</h4>
+<div class="card">
+
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.NOMBRE)
-        </dt>
+    <div class="card-header">
 
-        <dd>
-            @Html.DisplayFor(model => model.NOMBRE)
-        </dd>
+        <h4>INCIDENTE</h4>
+    </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.DESCRIPCION)
-        </dt>
+    <div class="card-body">
 
-        <dd>
-            @Html.DisplayFor(model => model.DESCRIPCION)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.FECHA_CREACION)
-        </dt>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label> </label>
+                    <div>
 
-        <dd>
-            @Html.DisplayFor(model => model.FECHA_CREACION)
-        </dd>
+                    </div>
+                </div>
+            </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.FECHA_ACTUALIZACION)
-        </dt>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label> </label>
+                    <div>
 
-        <dd>
-            @Html.DisplayFor(model => model.FECHA_ACTUALIZACION)
-        </dd>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.DURACION)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.DURACION)
-        </dd>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>@Html.DisplayName("Asunto") </label>
+                    <div class="">
+                        @Html.DisplayFor(model => model.NOMBRE)
+                    </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.MOTIVO_CIERRE)
-        </dt>
+                </div>
+            </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.MOTIVO_CIERRE)
-        </dd>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label> @Html.DisplayName("Usuario") </label>
+                    <div>
+                        @Html.DisplayFor(model => model.USUARIO.NOMBRE)
+                    </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.CANAL_ORIGEN.NOMBRE_ORIGEN)
-        </dt>
+                </div>
+            </div>
+        </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.CANAL_ORIGEN.NOMBRE_ORIGEN)
-        </dd>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label> @Html.DisplayName("Creacion") </label>
+                    <div>
+                        @Html.DisplayFor(model => model.FECHA_CREACION)
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label> @Html.DisplayName("Resuelto") </label>
+                    <div>
+                        @Html.DisplayFor(model => model.FECHA_ACTUALIZACION)
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.CATEGORIA.NOMBRE_CATEGORIA)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.CATEGORIA.NOMBRE_CATEGORIA)
-        </dd>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>@Html.DisplayName("Duracion") </label>
+                    <div>
+                        @Html.DisplayFor(model => model.DURACION)
+                    </div>
+                </div>
+            </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ESTADO.NOMBRE_ESTADO)
-        </dt>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>  @Html.DisplayName("Motivo de cierre")  </label>
+                    <div>
+                        @Html.DisplayFor(model => model.MOTIVO_CIERRE)
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.ESTADO.NOMBRE_ESTADO)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PRIORIDAD.NOMBRE_PRIORIDAD)
-        </dt>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>@Html.DisplayName("Origen") </label>
+                    <div>
+                        @Html.DisplayFor(model => model.CANAL_ORIGEN.NOMBRE_ORIGEN)
+                    </div>
+                </div>
+            </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.PRIORIDAD.NOMBRE_PRIORIDAD)
-        </dd>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label> @Html.DisplayName("Categoria")</label>
+                    <div>
+                        @Html.DisplayFor(model => model.CATEGORIA.NOMBRE_CATEGORIA)
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.USUARIO.NOMBRE)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.USUARIO.NOMBRE)
-        </dd>
 
-    </dl>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label> @Html.DisplayName("Estado")</label>
+                    <div>
+                        @Html.DisplayFor(model => model.ESTADO.NOMBRE_ESTADO)
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>   @Html.DisplayName("Prioridad") </label>
+                    <div>
+                        @Html.DisplayFor(model => model.PRIORIDAD.NOMBRE_PRIORIDAD)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>@Html.DisplayName("Descripcion") </label>
+                    <div>
+                        @Html.DisplayFor(model => model.DESCRIPCION)
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+
+    </div>
    
+
+
 </div>
+
+
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID_INCIDENTE }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Resolver", "Edit", new { id = Model.ID_INCIDENTE }) |
+    @Html.ActionLink("Volver a los tickets", "Index")
 </p>
