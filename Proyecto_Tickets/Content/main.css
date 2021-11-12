@@ -301,3 +301,8 @@ body {
     border-radius: 0.25rem;
     color: white;
 }
+
+.medium-textArea {
+    height: 6em;
+    width: 400px;
+}
